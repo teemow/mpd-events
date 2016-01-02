@@ -25,7 +25,7 @@ deps: .gobuild
 	mkdir -p $(PROJECT_PATH)
 	cd $(PROJECT_PATH) && ln -s ../../../.. $(PROJECT)
 
-	@GOPATH=$(GOPATH) builder go get github.com/fhs/gompd
+	@GOPATH=$(GOPATH) builder go get github.com/fhs/gompd/mpd
 	@GOPATH=$(GOPATH) builder go get github.com/spf13/cobra
 
 	# Fetch test packages
